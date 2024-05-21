@@ -148,7 +148,6 @@ nav {
 .mainWrapper{
     width: 100%;
     height: 1200px;
-    border: 2px solid black;
     overflow: hidden;
     justify-content: center;
     text-align: center;
@@ -204,16 +203,128 @@ nav {
 .ContactUsBox a{
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
+.ContactUsBox a:hover{
+    color: #FBBF16;
+}
+
+
 .ContactUsBox form {
-    display: flex;
-    flex-direction: column; /* Set the main direction to column */
+    display: block;
     gap: 20px; /* Add some space between form elements */
     align-items: center; /* Align items at the center horizontally */
 }
 
+.form-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+    float: left;
+    margin-left: 68px;
+}
 
+.form-group {
+    width: 400px;
+    flex: 1; /* Make both form groups take equal width */
+    margin-right: 50px; /* Add some space between form groups */
+}
+
+.form-group:last-child {
+    margin-right: 0; /* Remove margin-right for the last form group */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    float: left;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+
+.form-group label span {
+    color: red;
+}
+
+.form-group input {
+    width: 100%; /* Make input boxes take the full width of the form group */
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form-column {
+    justify-content: center;
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+    float: left;
+    margin-left: 70px;
+    width: 864px;
+}
+
+.form-group.full-width{
+    width: 100%;
+}
+
+.form-column.message {
+    height: 250px;
+}
+
+.form-group.message{
+    width: 100%;
+    height: 200px;
+}
+
+.userMessage {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px;
+    resize: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.submitButton{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    bottom: 50px; /* Position the button 20px from the bottom */
+    left: 50%; /* Position the button horizontally at 50% of the container width */
+    transform: translateX(-50%);
+    
+    background: #55ABFB;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    border: 0;
+}
 
 
 
